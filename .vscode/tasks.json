@@ -5,5 +5,6 @@
     "command": "gcc",
     "isShellCommand": true,
     "args": ["-g", "-Wall", "-o", "main", "main.c"],
+    // "args": ["-g", "-Wall", "-pthread", "-I/usr/local/include","-L/usr/local/lib/", "-o", "main", "main.c"],
     "showOutput": "always"
 }
