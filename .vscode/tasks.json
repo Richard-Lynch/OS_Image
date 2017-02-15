@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "command": "gcc",
     "isShellCommand": true,
-    "args": ["-g","-std=c99", "-Wall", "-o", "main", "main.c"],
-    // "args": ["-g", "-Wall", "-pthread", "-I/usr/local/include","-L/usr/local/lib/", "-o", "main", "main.c"],
+    // "args": ["-g","-std=c99", "-Wall", "-o", "main", "main.c"],
+    "args": ["-g","-std=c99", "-Wall", "-o", "main", "jpeg.c","-ljpeg"],
     "showOutput": "always"
 }

@@ -8,8 +8,7 @@
 #include <pthread.h>
 #include <time.h>
 #include <stdbool.h>
-
-void print_array(int** array, int width, int height);
+#include "printArray.c"
 
 int read_PPM(char fileName[])
 {
@@ -60,7 +59,7 @@ for(int i = 0; i<height; i++){
         image[i][j] = atoi(buff);
     }
 }
-print_array(image, width, height);
+print_int_array(image, width, height);
 
 
 
@@ -73,11 +72,4 @@ fclose(infile);
     return 0;
 }
 
-void print_array(int** array, int width, int height){
-    for(int i = 0; i<height; i++){
-        for(int j = 0; j<width*3; j++){
-            printf("%d ",array[i][j]);
-        }
-        printf("\n");
-    }
-}
+
