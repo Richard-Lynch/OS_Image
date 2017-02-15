@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     }
     int i = 0;
     while(cinfo.output_scanline<cinfo.output_height){
-        jpeg_read_scanlines(&cinfo, &image[i],1);
+        jpeg_read_scanlines(&cinfo, image[i],1);
     }
     print_char_array(image,cinfo.output_width, cinfo.output_height);
 
