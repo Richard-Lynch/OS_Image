@@ -27,9 +27,9 @@ if ((outfile = fopen(fileName, "wb")) == NULL) {
             exit(1);
         }
 
-fprintf(outfile, "%s\n", P_num);
-fprintf(outfile, "%d %d\n", width, height);
-fprintf(outfile, "%d\n", depth);
+fprintf(outfile, "%s \n", P_num);
+fprintf(outfile, "%d %d \n", width, height);
+fprintf(outfile, "%d \n", depth);
 
 int perh = depth/height;
 int perw = depth/width;
@@ -46,6 +46,7 @@ for(int i = 0; i<height; i++){
     }
     fprintf(outfile,"\n");
 }
+fclose(outfile);
 
 // done
     printf("Done creating PPM: %s\n\n", fileName);
